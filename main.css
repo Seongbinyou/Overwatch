@@ -1,0 +1,91 @@
+
+
+body{
+  margin: 0;
+  height: 100vh;
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding:0%;
+}
+.container{
+  width: 70%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container .hero{
+  width: 100px;
+  margin: 5px;            
+  box-sizing: border-box;
+
+  border-radius: 10px;
+  background-color: white;
+  padding: 5px;
+
+  transform: skewX(-14deg);
+  position:relative;
+  z-index: 1;
+  transition:all 2s ease;
+
+}
+.container .hero{
+  transition: transform 0.5s ease-out;
+  overflow: visible;
+}
+.container .hero:hover{
+  transform: scale(1.5) skewX(-14deg);
+  transition: transform 2s ease; 
+  z-index: 10;                     
+  background-color: yellow;       
+}
+
+.hero img{
+  width: 100%;
+  display: block;
+  transition: 10s;  
+}
+
+.container .hero:hover img{
+  filter: brightness(200%);
+}
+.notice{
+  width: 70%;            
+  margin: 40px auto;     
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+
+  position: static;     
+}
+.logo{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo img{
+  width: 150px;
+}
+.hero .desc{
+  position: absolute;
+
+  bottom: -70px;  
+  left: -70px;   
+
+  width: 100px; 
+  height: 80px;
+
+  background-color: white;
+  transform:skew(0deg);
+  opacity: 0;
+  transition: 0.1s;
+}
+.hero:hover .desc{
+  opacity: 1;
+}
+
+
